@@ -1,0 +1,6 @@
+kbdshortcutmain.py
+setup.py
+keyboardshortcut.egg-info/PKG-INFO
+keyboardshortcut.egg-info/SOURCES.txt
+keyboardshortcut.egg-info/dependency_links.txt
+keyboardshortcut.egg-info/top_level.txt
