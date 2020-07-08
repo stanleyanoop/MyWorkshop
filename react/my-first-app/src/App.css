@@ -7,6 +7,25 @@
   pointer-events: none;
 }
 
+.Header-style {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: whitesmoke;
+  color: whitesmoke;
+  background-color: darkslategray;
+}
+
+.tableStyle {
+  align-content: center;
+  align-self: center;
+  text-align: left;
+  vertical-align: middle;
+
+  background-color: gold;
+  background-repeat: repeat;
+  
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
