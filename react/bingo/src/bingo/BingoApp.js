@@ -20,7 +20,7 @@ class BingoApp extends React.Component {
     this.setState ({
       challengeWord : this.state.challengeWord,
       isGameOn : true
-    })
+    });
     // document.getElementById("bingo").setAttribute("className", "guess")
     playBingo(this.state.challengeWord);
   }
@@ -32,7 +32,7 @@ class BingoApp extends React.Component {
           <h3>Enter your Bingo word!!</h3>
           <input type="password" 
             value={this.state.challengeWord} 
-            onChange={(event) => this.setState( {challengeWord : event.target.value}) }></input>
+            onChange={(event) => this.setState( {challengeWord : event.target.value.toUpperCase()}) }></input>
           <p></p>
           <button onClick={ () => this.handleSubmit() }>Submit</button>
           <BingoGame 
@@ -44,7 +44,6 @@ class BingoApp extends React.Component {
   
 }
 function playBingo(challengeWord) {
-  console.log('inside playbingo');
   return(
     <BingoGame/>
   );

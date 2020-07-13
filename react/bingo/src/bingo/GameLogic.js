@@ -4,13 +4,14 @@ import './BingoApp.css';
 class GameLogic extends React.Component  {
     constructor (props){
         super(props);
-        console.log('Inside GameLogic')
-        console.log(this.props)
+        this.maskedChars = [];
+
         this.state = {
             attemptLetter : '',
             failedLetters : '',
             successLetters : '',
-            challengeWord : '',
+            challengeWord : [],
+            maskedWord : [],
             bingoColor : [
                 'attempt-left',
                 'attempt-left',
@@ -18,15 +19,28 @@ class GameLogic extends React.Component  {
                 'attempt-left',
                 'attempt-left'
             ]
-        }
+        };
 
     }
-    getBlankText() {
-        console.log('inside getBlankText');
+    getBlankText = () => {
         let challengeText = this.props.challenge;
         let size = challengeText.length;
         let challengeChars = challengeText.split('');
-        console.log(size);
+        let isInit = true;
+        let maskedChars = [];
+        if (isInit){
+            isInit = false;
+            maskedChars = [];
+            for (let i = 0; i < size ; i++){
+                maskedChars.push('*');
+            }
+        } else {
+            maskedChars = this.state.maskedWord;
+        }
+        this.maskedChars = maskedChars;
+        console.log(this.maskedChars);
+        console.log ('masked word');
+        console.log(this.state.maskedWord)
 
         return (
             <div className='board-row'>
@@ -36,53 +50,73 @@ class GameLogic extends React.Component  {
                 <label className={this.state.bingoColor[3]} >G</label>
                 <label className={this.state.bingoColor[4]} >O</label>
                 <br></br>
-                {challengeChars.map((chara, i) => <RenderChallenge guessedchar={chara} visible='true'/>)}
+                {maskedChars.map((chara, i) => <RenderChallenge guessedchar={chara} visible='true'/>)}
             </div>
         );
     }
 
-    handleSubmit() {
-        console.log('In games handle submit');
-        console.log(this.state);
+    handleSubmit = () => {
         this.validateInputString();
+    }
+
+    validateInputString = () => {
+        let challengeText = this.props.challenge;
+        let challengeChars = challengeText.split('');
+        let index = challengeText.indexOf(this.state.attemptLetter);
+        console.log('Current index = ' + index);
+        let success = true;
+        let successLetters = this.state.successLetters;
+        let failedLetters = this.state.failedLetters;
+        if (index !== -1){
+            this.gameOn(challengeChars);
+            success = true;
+            successLetters = successLetters + this.state.attemptLetter;
+            
+        } else {
+            success = false;
+            failedLetters = failedLetters + this.state.attemptLetter;
+        }
+        console.log('masked chars going to the state')
+        console.log(this.maskedChars)
+        this.setState({
+            failedLetters : failedLetters,
+            successLetters : successLetters,
+            challengeWord: challengeChars,
+            maskedWord: this.maskedChars,
+
+        }, () => console.log(this.state));
 
     }
 
-    validateInputString() {
-        let challengeText = this.props.challenge;
-        let challengeChars = challengeText.split('');
-        console.log(challengeChars);
+    gameOn = (challengeChars) => {
+        let i = 0;
         for (let chara of challengeChars) {
-            console.log(chara);
-            console.log(this.state.attemptLetter);
-            let index = challengeText.indexOf(chara.toUpperCase());
-            console.log('Current index = ' + index);
+            i++;
+            console.log(this.state.maskedWord);
             if (this.state.attemptLetter === chara.toUpperCase()) {
-                console.log('Match found');
-                alert('Great Job !! you got ' + chara.toUpperCase() + ' at position ' + index);
-                this.setState(state => {
-                    state.successLetters = this.state.successLetters +chara;
-                    return state;
+                console.log('****************Match found');
+                console.log(this.state.maskedWord);
+                let temp = [];
+                let j = 0;
+                for (let c of this.maskedChars){
+                    j++;
+                    console.log('test********')
+                    console.log(c) ;
+                    if (c === '*'){
+                        if (i === j){
+                            temp.push(this.state.attemptLetter);
+                        } else {
+                            temp.push('*');
+                        }
 
-                });
-                // this.setState({
-                //     successLetters : this.state.successLetters + chara
-                // });
+                    } else {
+                        temp.push(c);
+                    }
+                }
+                console.log(temp);
+                this.maskedChars = temp;
+                alert('Great Job !! you got ' + chara.toUpperCase() + ' at position ' + i);               
             }
-            else {
-                console.log('Match not found');
-
-                this.setState(state => {
-                    state.failedLetters = this.state.failedLetters + chara;
-                    return state;
-
-                });
-                // this.setState({
-                //     failedLetters : this.state.failedLetters + chara
-                // });
-            }
-
-            console.log(this.state);
         }
     }
 
@@ -112,8 +146,8 @@ class GameLogic extends React.Component  {
 class RenderChallenge extends React.Component{
 
     render(){
-        console.log ('In Render Challenge')
-        console.log (this.props)
+        // console.log ('In Render Challenge')
+        // console.log (this.props)
         return (
             <div className='board-row-input'>
                 {/* <input 
