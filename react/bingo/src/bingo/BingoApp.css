@@ -55,3 +55,12 @@
 
   /* font-size: calc(15px + 2vmin); */
 }
+.bingo-wrong-answer {
+  text-decoration: line-through;
+  display: inline-flexbox;
+  font-size: 30pt;
+  color: red;
+
+
+  /* font-size: calc(15px + 2vmin); */
+}

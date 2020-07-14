@@ -14,9 +14,8 @@ class BingoApp extends React.Component {
   }
 
   handleSubmit(){
-    alert("Entering the word for Bingo..." + this.state.challengeWord);
-    console.log("Anoop")
-    console.log(this.state)
+    // console.log("Anoop")
+    // console.log(this.state)
     this.setState ({
       challengeWord : this.state.challengeWord,
       isGameOn : true
