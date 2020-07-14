@@ -14,7 +14,7 @@
 }
 
 .word-sel {
-  display: block;
+  display: none;
 }
 
 .attempt-left {
@@ -29,7 +29,6 @@
 
 .guess-letter {
   font-size: calc(10px + 2vmin);
-  
   width: 10%;
   box-sizing: content-box;
   
@@ -51,16 +50,25 @@
   text-decoration : underline ;
   display: inline-flexbox;
   font-size: 40pt;
-
-
-  /* font-size: calc(15px + 2vmin); */
 }
+
 .bingo-wrong-answer {
   text-decoration: line-through;
   display: inline-flexbox;
   font-size: 30pt;
   color: red;
+}
 
-
-  /* font-size: calc(15px + 2vmin); */
+.button-style {
+  margin-left: 5% ;
+  border-radius: 10%;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-left-radius: 40% ;
+  border-bottom-right-radius: 40%;
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  color: maroon;
+  background-color: white;
 }

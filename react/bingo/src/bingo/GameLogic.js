@@ -13,6 +13,7 @@ class GameLogic extends React.Component {
             successLetters: '',
             challengeWord: [],
             maskedWord: [],
+            isGameOver : false,
             bingoColor: [
                 'attempt-left',
                 'attempt-left',
@@ -38,10 +39,8 @@ class GameLogic extends React.Component {
         } else {
             maskedChars = this.state.maskedWord;
         }
-        this.maskedChars = maskedChars;
-        console.log(this.maskedChars);
-        console.log('masked word');
-        console.log(this.state.maskedWord)
+        this.maskedChars =  (this.state.maskedWord.length === 0 
+            ? maskedChars : this.state.maskedWord);
 
         return (
             <div className='board-row'>
@@ -51,10 +50,10 @@ class GameLogic extends React.Component {
                 <label className={this.state.bingoColor[3]} >G</label>
                 <label className={this.state.bingoColor[4]} >O</label>
                 <br></br>
-                {maskedChars.map((chara, i) =>
+                {this.maskedChars.map((chara, i) =>
                     <RenderChallenge
                         guessedchar={chara}
-                        visible='true' />)}
+                        visible='true' />)} 
                 <br />
                 <h4>Wrongly Guessed Letters </h4>
                 <label className='bingo-wrong-answer'>
@@ -66,31 +65,36 @@ class GameLogic extends React.Component {
     }
 
     handleSubmit = () => {
-        if (this.state.successLetters.includes(this.state.attemptLetter) 
-            || this.state.failedLetters.includes(this.state.attemptLetter)) {
-            alert('This letter was already attempted. Please try again.');
-            this.setState({
-                attemptLetter : ''
-            })
+        if (this.state.isGameOver !== true) {
+            if (this.state.successLetters.includes(this.state.attemptLetter) 
+                || this.state.failedLetters.includes(this.state.attemptLetter)) {
+                alert('This letter was already attempted. Please try again.');
+                this.setState({
+                    attemptLetter : ''
+                })
+            } else {
+                this.validateGameRule();
+                this.setState({
+                    attemptLetter : ''
+                })
+            }
+
         } else {
-            this.validateInputString();
-            this.setState({
-                attemptLetter : ''
-            })
+            const gameOver = 'Game Over!!. \nClick on the Home button to play again.'
+            alert (gameOver);
         }
     }
 
-    validateInputString = () => {
+    validateGameRule = () => {
         let challengeText = this.props.challenge;
         let challengeChars = challengeText.split('');
         let index = challengeText.indexOf(this.state.attemptLetter);
-        console.log('Current index = ' + index);
         let success = true;
         let successLetters = this.state.successLetters;
         let failedLetters = this.state.failedLetters;
         let bingoColor = this.state.bingoColor;
         if (index !== -1) {
-            this.gameOn(challengeChars);
+            this.gameOn(challengeChars, challengeText);
             success = true;
             successLetters = successLetters + this.state.attemptLetter;
 
@@ -112,8 +116,6 @@ class GameLogic extends React.Component {
             }
     
         }
-        console.log('masked chars going to the state')
-        console.log(this.maskedChars)
         this.setState({
             failedLetters: failedLetters,
             successLetters: successLetters,
@@ -133,6 +135,7 @@ class GameLogic extends React.Component {
                 successLetters: '',
                 challengeWord: [],
                 maskedWord: [],
+                isGameOver : true,
                 bingoColor: [
                     'attempt-left',
                     'attempt-left',
@@ -143,20 +146,16 @@ class GameLogic extends React.Component {
             }
         );        
     }
-    gameOn = (challengeChars) => {
+    gameOn = (challengeChars, challengeText) => {
         let i = 0;
         for (let chara of challengeChars) {
             i++;
             console.log(this.state.maskedWord);
             if (this.state.attemptLetter === chara.toUpperCase()) {
-                console.log('****************Match found');
-                console.log(this.state.maskedWord);
                 let temp = [];
                 let j = 0;
                 for (let c of this.maskedChars) {
                     j++;
-                    console.log('test********')
-                    console.log(c);
                     if (c === '*') {
                         if (i === j) {
                             temp.push(this.state.attemptLetter);
@@ -168,15 +167,15 @@ class GameLogic extends React.Component {
                         temp.push(c);
                     }
                 }
-                console.log(temp);
                 this.maskedChars = temp;
                 if (this.maskedChars.indexOf('*') === -1) {
                     alert('Great Job !! you got ' + chara.toUpperCase() + ' at position ' + i);
                     alert('Congratulations!!! You have guessed the word right. It is ' +
-                        this.state.challengeWord);
+                        challengeText);
                     this.cleanUp();
+                }else {
+                    alert('Great Job !! you got ' + chara.toUpperCase() + ' at position ' + i);
                 }
-                alert('Great Job !! you got ' + chara.toUpperCase() + ' at position ' + i);
             }
         }
     }
@@ -192,7 +191,7 @@ class GameLogic extends React.Component {
                     value={this.state.attemptLetter}
                     onChange={(event) => this.setState({ attemptLetter: event.target.value.toUpperCase() })}></input>
 
-                <button onClick={() => this.handleSubmit()}>Enter</button>
+                <button className='button-style' onClick={() => this.handleSubmit()}> Enter </button>
                 <div>
                     {this.getBlankText()}
                 </div>
@@ -207,16 +206,10 @@ class GameLogic extends React.Component {
 class RenderChallenge extends React.Component {
 
     render() {
-        // console.log ('In Render Challenge')
-        // console.log (this.props)
         return (
             <div className='board-row-input'>
-                {/* <input 
-                    className = 'bingo-answer' 
-                    value = {this.props.visible === 'true' ? this.props.guessedchar.toUpperCase() : '**'}>
-                </input> */}
                 <label className='bingo-answer'>
-                    {this.props.visible === 'true' ? this.props.guessedchar.toUpperCase() : '*'}
+                    {this.props.guessedchar.toUpperCase()}
                 </label>
                 <label>{'-'}</label>
             </div>
