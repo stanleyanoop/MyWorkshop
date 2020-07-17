@@ -17,7 +17,7 @@ class BingoApp extends React.Component {
       challengeWord : this.state.challengeWord,
       isGameOn : true
     });
-    playBingo(this.state.challengeWord);
+    // playBingo(this.state.challengeWord);
   }
 
   refreshPage () {
@@ -48,9 +48,9 @@ class BingoApp extends React.Component {
   }
   
 }
-function playBingo(challengeWord) {
-  return(
-    <BingoGame/>
-  );
-}
+// function playBingo(challengeWord) {
+//   return(
+//     <BingoGame/>
+//   );
+// }
 export default BingoApp;

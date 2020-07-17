@@ -1,6 +1,5 @@
 import React from 'react';
 import './BingoApp.css';
-import { cleanup } from '@testing-library/react';
 
 class GameLogic extends React.Component {
     constructor(props) {
@@ -65,7 +64,7 @@ class GameLogic extends React.Component {
     }
 
     handleSubmit = () => {
-        if (this.state.isGameOver !== true) {
+        if (!this.state.isGameOver) {
             if (this.state.successLetters.includes(this.state.attemptLetter) 
                 || this.state.failedLetters.includes(this.state.attemptLetter)) {
                 alert('This letter was already attempted. Please try again.');
@@ -203,7 +202,7 @@ class GameLogic extends React.Component {
 
 }
 
-class RenderChallenge extends React.Component {
+class RenderChallenge extends React.PureComponent {
 
     render() {
         return (

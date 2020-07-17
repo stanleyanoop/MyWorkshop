@@ -3,7 +3,7 @@ import GameLogic from './GameLogic'
 
 import './BingoApp.css';
 
-class Game extends React.Component {
+class Game extends React.PureComponent {
 
     render(){
         return(
