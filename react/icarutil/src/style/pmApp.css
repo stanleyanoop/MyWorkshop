@@ -32,7 +32,10 @@
   font-weight: bolder;
   align-self: center;
   column-width: 33%;
-
+  position: -webkit-sticky; 
+  position: sticky; 
+  top: 0px; 
+  z-index: 100;
 }
 .pm-table-data-row{
   margin-left: 10%;
@@ -63,9 +66,18 @@
 
 }
 .table{
-  width: 100%;
-  border: 10em;
+  width: 90%;
   align-self: center;
   align-content: center;
   align-items: center;
+
+  position: absolute; 
+  height: 300px; 
+  overflow: auto;
 }
+
+.filter-field{
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+

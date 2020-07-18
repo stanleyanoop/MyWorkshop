@@ -24,6 +24,7 @@ function PMFilter (){
                 <br/>
                 <label>PM Type </label>
                 <input
+                    className='filter-field'
                     type='text'
                     onChange={(event) => setPmtype(event.target.value)}></input>
                 <input 
