@@ -6,22 +6,26 @@ function PMFilter (){
     const [startDate, setStartDate] = useState('');
     const [endDate, setEndDate] = useState('');
     return (
-        <div>
+        <div className='app'>
+            <h1>PM Data List</h1>
             <h2 >PM Filter</h2>
             <form>
-                <label>PM Type </label>
-                <input
-                    type='text'
-                    onChange={(event) => setPmtype(event.target.value)}></input>
                 <label>Start Date </label>
                 <input
+                    className='filter-field'
                     type='Date'
                     onChange= {(event) => setStartDate(event.target.value)}>
                 </input>
                 <label>End Date </label>
                 <input 
+                    className='filter-field'
                     type='Date'
                     onChange= {(ev) => setEndDate(ev.target.value)}></input>
+                <br/>
+                <label>PM Type </label>
+                <input
+                    type='text'
+                    onChange={(event) => setPmtype(event.target.value)}></input>
                 <input 
                     type='submit'
                     value='Filter'></input>

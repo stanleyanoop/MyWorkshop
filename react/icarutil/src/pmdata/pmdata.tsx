@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PMFilter from './pmfilter'
 import PMDataTable from './pmdatatable'
 import '../style/pmApp.css'
 
 function PMData(){
     return(
-        <div className='pm-data-app'>
-            <h1>PM Data List</h1>
-            <PMFilter></PMFilter>
+        <React.Fragment>
+            <div className='app'>
+                <PMFilter></PMFilter>
+            </div>
             <PMDataTable></PMDataTable>
-        </div>
+        </React.Fragment>
     );
 }
 

@@ -8,7 +8,6 @@ function Login() {
     const history = useHistory();
     
     const handleSubmit = (event: any) => {
-        console.log('******************');
         alert ('User Name : ' + name);
         var isLoggedIn:boolean = validateCredentials(name, password);
         console.log(isLoggedIn);
