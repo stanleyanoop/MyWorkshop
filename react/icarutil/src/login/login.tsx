@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import {useHistory} from 'react-router-dom';
 import '../style/pmApp.css'
 
-const Login = ({name, isLoggedIn}) => {
-    // const [name, setName] = useState('');
+const Login = () => {
+    const [userName, setName] = useState('');
     const [password, setPassword] = useState('');
-    // const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
     const history = useHistory();
     
     const handleSubmit = (event: any) => {
-        alert ('User Name : ' + name);
-        isLoggedIn = validateCredentials(name, password);
+        alert ('User userName : ' + userName);
+        setIsLoggedIn(validateCredentials(userName, password));
         console.log(isLoggedIn);
         if (isLoggedIn){
             console.log('Logged in');
@@ -25,8 +25,8 @@ const Login = ({name, isLoggedIn}) => {
         event.preventDefault();
     }
     
-    const validateCredentials = (name: string, pwd: string) => {
-        if (name === 'test' && pwd === '123'){
+    const validateCredentials = (userName: string, pwd: string) => {
+        if (userName === 'test' && pwd === '123'){
             return true;
         } else {
             return false;
@@ -34,7 +34,7 @@ const Login = ({name, isLoggedIn}) => {
     }
     
     const handleNameChangeEvent = (event: any) => {
-        name = (event.target.value);
+        setName( (event.target.value));
     }
     const handlePwdChangeEvent = (event: any) => {
         setPassword(event.target.value)
@@ -43,13 +43,13 @@ const Login = ({name, isLoggedIn}) => {
         <div className='app'>
             <h1>PM Data Application</h1>
             <form onSubmit={(event) => handleSubmit(event)}>
-            <label>User Name : </label>
+            <label>User userName : </label>
                 <input 
                     // className='login'
                     type='text'
-                    placeholder='Enter your Name...'
+                    placeholder='Enter your userName...'
                     onChange={(event) => handleNameChangeEvent(event)}
-                    value = {name}></input>
+                    value = {userName}></input>
                 <br></br>
                 <label>Password : </label>
                 <input 
@@ -61,7 +61,7 @@ const Login = ({name, isLoggedIn}) => {
                 <input 
                     type='submit' 
                     value='Login' 
-                    disabled ={!(name.length > 0 && password.length > 0)}></input>
+                    disabled ={!(userName.length > 0 && password.length > 0)}></input>
             </form>
 
         </div>
