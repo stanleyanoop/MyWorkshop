@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import {useHistory} from 'react-router-dom';
 import '../style/pmApp.css'
 
-function Login() {
-    const [name, setName] = useState('');
+const Login = ({name, isLoggedIn}) => {
+    // const [name, setName] = useState('');
     const [password, setPassword] = useState('');
+    // const [isLoggedIn, setIsLoggedIn] = useState(false)
     const history = useHistory();
     
     const handleSubmit = (event: any) => {
         alert ('User Name : ' + name);
-        var isLoggedIn:boolean = validateCredentials(name, password);
+        isLoggedIn = validateCredentials(name, password);
         console.log(isLoggedIn);
         if (isLoggedIn){
             console.log('Logged in');
@@ -33,7 +34,7 @@ function Login() {
     }
     
     const handleNameChangeEvent = (event: any) => {
-        setName(event.target.value)
+        name = (event.target.value);
     }
     const handlePwdChangeEvent = (event: any) => {
         setPassword(event.target.value)

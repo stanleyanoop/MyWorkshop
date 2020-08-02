@@ -1,0 +1,9 @@
+{
+    "login": "userName",
+    "isLoggedIn": false,
+    "startDate": "mm/dd/yyyy",
+    "endDate": "mm/dd/yyyy",
+    "pmType":"pmTypeFilter",
+    "pmList": ["asset_id", "asset_id2"]
+
+}

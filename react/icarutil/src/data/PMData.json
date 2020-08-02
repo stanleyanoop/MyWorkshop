@@ -1,0 +1,747 @@
+[
+    {
+        "asset_id": "PS00842684427000CE0100",
+        "pm_type": "AcerM6",
+        "pm_date": "2020-02-04"
+    },
+    {
+        "asset_id": "1LS0MR2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-02-06"
+    },
+    {
+        "asset_id": "1LS1MR2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "2SSTDW2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "2SSVDW2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "8DD6MN2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-04-30"
+    },
+    {
+        "asset_id": "8DD8MN2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-04-30"
+    },
+    {
+        "asset_id": "8DF8MN2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-06-04"
+    },
+    {
+        "asset_id": "8DFBMN2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-05-04"
+    },
+    {
+        "asset_id": "8DG9MN2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-05-04"
+    },
+    {
+        "asset_id": "DS7DCP2",
+        "pm_type": "ACQ DELL 5820",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "2UA7450QLF",
+        "pm_type": "ACQ HP 8400",
+        "pm_date": "2020-06-29"
+    },
+    {
+        "asset_id": "2UA8500J28",
+        "pm_type": "ACQ HP 8400",
+        "pm_date": "2020-06-29"
+    },
+    {
+        "asset_id": "2UA9140ZQJ",
+        "pm_type": "ACQ HP 8400",
+        "pm_date": "2020-03-23"
+    },
+    {
+        "asset_id": "2UA445221J",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-01-31"
+    },
+    {
+        "asset_id": "2UA445221K",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-02-04"
+    },
+    {
+        "asset_id": "2UA5191K21",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-01-31"
+    },
+    {
+        "asset_id": "2UA54126B6",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-05-06"
+    },
+    {
+        "asset_id": "2UA54126B9",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "2UA54126BD",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-06-02"
+    },
+    {
+        "asset_id": "2UA54126BG",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-06-29"
+    },
+    {
+        "asset_id": "2UA54126BJ",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "2UA54126BL",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-01-31"
+    },
+    {
+        "asset_id": "2UA7010YQZ",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "2UA7010YSY",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-05-06"
+    },
+    {
+        "asset_id": "2UA7010YT5",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-06-02"
+    },
+    {
+        "asset_id": "2UA7061XHH",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "2UA7282JS9",
+        "pm_type": "ACQ HP Z440",
+        "pm_date": "2020-02-04"
+    },
+    {
+        "asset_id": "2UA00408PJ",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "2UA00408PR",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "2UA00408Q8",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-05-06"
+    },
+    {
+        "asset_id": "2UA0050LF5",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "2UA0191B4Z",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-05-27"
+    },
+    {
+        "asset_id": "2UA0230GJ6",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "2UA0371HM7",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "2UA0371HN7",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-05-06"
+    },
+    {
+        "asset_id": "2UA12412LL",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "2UA13319DS",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "2UA13319DT",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-02-06"
+    },
+    {
+        "asset_id": "2UA1331MRY",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "2UA21312RY",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-03-23"
+    },
+    {
+        "asset_id": "2UA2150BXR",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-02"
+    },
+    {
+        "asset_id": "2UA23807K3",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "2UA23807K6",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-02"
+    },
+    {
+        "asset_id": "2UA351197W",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "2UA4170VT3",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-05-06"
+    },
+    {
+        "asset_id": "2UA44918KG",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "2UA9500LL2",
+        "pm_type": "ACQ HP Z600",
+        "pm_date": "2020-02-05"
+    },
+    {
+        "asset_id": "A2XJ0855F",
+        "pm_type": "AMP(64)",
+        "pm_date": "2020-06-03"
+    },
+    {
+        "asset_id": "VAD001085P",
+        "pm_type": "Atakr",
+        "pm_date": "2020-05-04"
+    },
+    {
+        "asset_id": "CLSIMULATOR",
+        "pm_type": "CardioLab Simulator",
+        "pm_date": "16-2020-06"
+    },
+    {
+        "asset_id": "SHY13260002GA",
+        "pm_type": "CardioLab Simulator",
+        "pm_date": "2020-04-14"
+    },
+    {
+        "asset_id": "SHY16430105TA",
+        "pm_type": "CardioLab Simulator",
+        "pm_date": "2020-04-14"
+    },
+    {
+        "asset_id": "SHY19030117TA",
+        "pm_type": "CardioLab Simulator",
+        "pm_date": "2020-05-04"
+    },
+    {
+        "asset_id": "H0SR65J",
+        "pm_type": "Carto",
+        "pm_date": "2020-02-04"
+    },
+    {
+        "asset_id": "HR0NT02",
+        "pm_type": "CARTO",
+        "pm_date": "2020-05-27"
+    },
+    {
+        "asset_id": "D3CK2677G",
+        "pm_type": "CO2 Dual Module",
+        "pm_date": "2020-06-24"
+    },
+    {
+        "asset_id": "K3CK2829G",
+        "pm_type": "CO2 Dual Module",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "K3CK2830G",
+        "pm_type": "CO2 Dual Module",
+        "pm_date": "2020-06-24"
+    },
+    {
+        "asset_id": "USE044NB6J",
+        "pm_type": "DL370 G6 High",
+        "pm_date": " 2020-06-29"
+    },
+    {
+        "asset_id": "USE130N2MS",
+        "pm_type": "DL370 G6 High",
+        "pm_date": " 2020-06-29"
+    },
+    {
+        "asset_id": "USE130N2MT",
+        "pm_type": "DL370 G6 High",
+        "pm_date": " 2020-05-07"
+    },
+    {
+        "asset_id": "USE151NV97",
+        "pm_type": "DL370 G6 Low",
+        "pm_date": " 2020-05-07"
+    },
+    {
+        "asset_id": "94502617",
+        "pm_type": "GECW",
+        "pm_date": "2020-05-27"
+    },
+    {
+        "asset_id": "SG409470002GP",
+        "pm_type": "GECW",
+        "pm_date": "2020-02-06"
+    },
+    {
+        "asset_id": "SG409470003GP",
+        "pm_type": "GECW",
+        "pm_date": "2020-05-06"
+    },
+    {
+        "asset_id": "SG409470005GP",
+        "pm_type": "GECW",
+        "pm_date": "2020-05-06"
+    },
+    {
+        "asset_id": "SG410400340GA",
+        "pm_type": "GECW",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "SH512491627TA",
+        "pm_type": "GECW",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "SJU12301444TA",
+        "pm_type": "GECW",
+        "pm_date": "2020-02-05"
+    },
+    {
+        "asset_id": "SJU12451553TA",
+        "pm_type": "GECW",
+        "pm_date": "2020-02-05"
+    },
+    {
+        "asset_id": "SJU12451554TA",
+        "pm_type": "GECW",
+        "pm_date": "2020-05-27"
+    },
+    {
+        "asset_id": "SJU12451556TA",
+        "pm_type": "GECW",
+        "pm_date": "2020-06-10"
+    },
+    {
+        "asset_id": "CNBS112046",
+        "pm_type": "HP Color LaserJet CP2020 Series Printer",
+        "pm_date": "2020-06-30"
+    },
+    {
+        "asset_id": "CNGSD02598",
+        "pm_type": "HP Color LaserJet CP2020 Series Printer",
+        "pm_date": "2020-03-23"
+    },
+    {
+        "asset_id": "PHBH704451",
+        "pm_type": "HP Color LaserJet Printer",
+        "pm_date": "2020-03-23"
+    },
+    {
+        "asset_id": "PHBH704451",
+        "pm_type": "HP Color LaserJet Printer",
+        "pm_date": "2020-04-15"
+    },
+    {
+        "asset_id": "2UA7420Q1D",
+        "pm_type": "HP8400",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "2UA8460HJS",
+        "pm_type": "HP8400",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "2UA9140ZMM",
+        "pm_type": "HP8400",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "J0433T6",
+        "pm_type": "IBI1500T Ablator",
+        "pm_date": "2020-02-28"
+    },
+    {
+        "asset_id": "JTD08041146SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-06-23"
+    },
+    {
+        "asset_id": "JTD09042240SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-01-31"
+    },
+    {
+        "asset_id": "JTD09092401SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-06-04"
+    },
+    {
+        "asset_id": "JTD09512959SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-01-31"
+    },
+    {
+        "asset_id": "JTD10423358SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-02-04"
+    },
+    {
+        "asset_id": "JTD11374257SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-06-03"
+    },
+    {
+        "asset_id": "JTD12474959SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-06-23"
+    },
+    {
+        "asset_id": "JTD16030023SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-06-04"
+    },
+    {
+        "asset_id": "JTD18180226SA",
+        "pm_type": "IEB",
+        "pm_date": "2020-06-23"
+    },
+    {
+        "asset_id": "060WUL 8953",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-05-04"
+    },
+    {
+        "asset_id": "100MUL3274",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-06-11"
+    },
+    {
+        "asset_id": "60WUL1464",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-03-18"
+    },
+    {
+        "asset_id": "60WUL1616",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-06-01"
+    },
+    {
+        "asset_id": "60WUL1823",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "60WUL5964",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-06-01"
+    },
+    {
+        "asset_id": "60WUL5973",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-06-04"
+    },
+    {
+        "asset_id": "60WUL5975",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-06-01"
+    },
+    {
+        "asset_id": "W0610855",
+        "pm_type": "Isolation Transformer",
+        "pm_date": "2020-02-07"
+    },
+    {
+        "asset_id": "CNB0403274",
+        "pm_type": "LaserJet Pro 400 M451nw Printer",
+        "pm_date": "2020-06-30"
+    },
+    {
+        "asset_id": "M00421000TC0",
+        "pm_type": "Maestro",
+        "pm_date": "2020-05-04"
+    },
+    {
+        "asset_id": "USE525S6P3",
+        "pm_type": "ML 350p G9",
+        "pm_date": " 2020-06-30"
+    },
+    {
+        "asset_id": "USE525SB0B",
+        "pm_type": "ML 350p G9",
+        "pm_date": " 2020-06-30"
+    },
+    {
+        "asset_id": "USE6083X5V",
+        "pm_type": "ML 350p G9",
+        "pm_date": " 2020-06-01"
+    },
+    {
+        "asset_id": "USE707AS04",
+        "pm_type": "ML 350p G9",
+        "pm_date": " 2020-05-11"
+    },
+    {
+        "asset_id": "USE740N9VH",
+        "pm_type": "ML 370 G5",
+        "pm_date": " 2020-06-30"
+    },
+    {
+        "asset_id": "SKR15450008SA",
+        "pm_type": "PDM Base Station Plus",
+        "pm_date": "2020-06-24"
+    },
+    {
+        "asset_id": "SKR16040015SA",
+        "pm_type": "PDM Base Station Plus",
+        "pm_date": "2020-06-01"
+    },
+    {
+        "asset_id": "SKR16040019SA",
+        "pm_type": "PDM Base Station Plus",
+        "pm_date": "2020-06-04"
+    },
+    {
+        "asset_id": "SKR16040029SA",
+        "pm_type": "PDM Base Station Plus",
+        "pm_date": "2020-06-04"
+    },
+    {
+        "asset_id": "SKR17200926TA",
+        "pm_type": "PDM Base Station Plus",
+        "pm_date": "2020-04-30"
+    },
+    {
+        "asset_id": "SKR17241163TA",
+        "pm_type": "PDM Base Station Plus",
+        "pm_date": "2020-03-20"
+    },
+    {
+        "asset_id": "SKR17241204TA",
+        "pm_type": "PDM Base Station Plus",
+        "pm_date": "2020-03-20"
+    },
+    {
+        "asset_id": "SJJ12170003SP",
+        "pm_type": "PDM BaseLite",
+        "pm_date": "2020-06-22"
+    },
+    {
+        "asset_id": "SJJ12440015SA",
+        "pm_type": "PDM BaseLite",
+        "pm_date": "2020-06-22"
+    },
+    {
+        "asset_id": "SJJ14100007SP",
+        "pm_type": "PDM BaseLite",
+        "pm_date": "2020-06-02"
+    },
+    {
+        "asset_id": "SKR16340216TA",
+        "pm_type": "PDM BaseLite",
+        "pm_date": "2020-02-18"
+    },
+    {
+        "asset_id": "SKR16340230TA",
+        "pm_type": "PDM BaseLite",
+        "pm_date": "2020-02-18"
+    },
+    {
+        "asset_id": "SA312490896GA",
+        "pm_type": "PDM",
+        "pm_date": "2020-06-09"
+    },
+    {
+        "asset_id": "SA316270115SA",
+        "pm_type": "PDM",
+        "pm_date": "2020-06-09"
+    },
+    {
+        "asset_id": "SPX20190102SA",
+        "pm_type": "PDM",
+        "pm_date": "2020-06-09"
+    },
+    {
+        "asset_id": "10030046",
+        "pm_type": "Quantum Data Video Generator",
+        "pm_date": "2020-03-19"
+    },
+    {
+        "asset_id": "2UA53836BJ",
+        "pm_type": "REV HP Z440",
+        "pm_date": "2020-01-31"
+    },
+    {
+        "asset_id": "2UA71121RT",
+        "pm_type": "REV Z440",
+        "pm_date": "2020-02-05"
+    },
+    {
+        "asset_id": "GR90MN2",
+        "pm_type": "Review Dell 5050",
+        "pm_date": "2020-05-04"
+    },
+    {
+        "asset_id": "1CP4GQ2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "1CQ5GQ2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "1CS2GQ2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-01-30"
+    },
+    {
+        "asset_id": "1CW6GQ2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "1DPVMR2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-01-30"
+    },
+    {
+        "asset_id": "51QY2W2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-06-25"
+    },
+    {
+        "asset_id": "BHTZ0S2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-02-04"
+    },
+    {
+        "asset_id": "BHVT0S2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-02-04"
+    },
+    {
+        "asset_id": "BHVX0S2",
+        "pm_type": "Review Dell 5060",
+        "pm_date": "2020-02-10"
+    },
+    {
+        "asset_id": "USE130N2MT",
+        "pm_type": "Server",
+        "pm_date": "2020-05-07"
+    },
+    {
+        "asset_id": "M1ST7361G",
+        "pm_type": "TRAMRAC",
+        "pm_date": "2020-06-23"
+    },
+    {
+        "asset_id": "RST10260757GA",
+        "pm_type": "TRAMRAC",
+        "pm_date": "2020-06-23"
+    },
+    {
+        "asset_id": "40012641404",
+        "pm_type": "UPS",
+        "pm_date": "2020-06-24"
+    },
+    {
+        "asset_id": "40012651404",
+        "pm_type": "UPS",
+        "pm_date": "2020-03-20"
+    },
+    {
+        "asset_id": "40018911510",
+        "pm_type": "UPS",
+        "pm_date": "2020-06-24"
+    },
+    {
+        "asset_id": "40062741708",
+        "pm_type": "UPS",
+        "pm_date": "2020-05-21"
+    },
+    {
+        "asset_id": "40062811708",
+        "pm_type": "UPS",
+        "pm_date": "2020-06-22"
+    },
+    {
+        "asset_id": "40062911708",
+        "pm_type": "UPS",
+        "pm_date": "2020-05-04"
+    },
+    {
+        "asset_id": "40062961708",
+        "pm_type": "UPS",
+        "pm_date": "2020-05-21"
+    },
+    {
+        "asset_id": "40170141505",
+        "pm_type": "UPS",
+        "pm_date": "2020-05-21"
+    },
+    {
+        "asset_id": "10030046",
+        "pm_type": "~$antum Data Video Generator",
+        "pm_date": "2020-03-19"
+    },
+    {
+        "asset_id": "60WUL5973",
+        "pm_type": "~$olation Transformer",
+        "pm_date": "2020-06-04"
+    },
+    {
+        "asset_id": "SHY16430105TA",
+        "pm_type": "~$rdioLab Simulator",
+        "pm_date": "2020-04-14"
+    },
+    {
+        "asset_id": "40062961708",
+        "pm_type": "~$S",
+        "pm_date": "2020-05-21"
+    }
+]
