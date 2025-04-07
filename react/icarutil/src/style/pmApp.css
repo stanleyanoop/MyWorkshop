@@ -1,0 +1,83 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: calc(10px + 2vmin); 
+    background-color: olive;
+  }
+  
+
+.login {
+    align-self: center;
+    align-items: center;
+    vertical-align: 50%;
+    text-align-last: auto;
+}
+
+.pm-data-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: calc(10px + 2vmin);
+  width: 100%; 
+}
+
+.pm-table-header{
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline;
+
+  font-weight: bolder;
+  align-self: center;
+  column-width: 33%;
+  position: -webkit-sticky; 
+  position: sticky; 
+  top: 0px; 
+  z-index: 100;
+}
+.pm-table-data-row{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: inline-flexbox;
+  background-color: lightcyan;
+  background-repeat: round;
+
+  font-weight: normal;
+  align-self: center;
+  /* column-width: 33%; */
+
+}
+
+.pm-table-data{
+  margin-left: 5%;
+  margin-right: 10%;
+
+  display: inline-table;
+  background-color: lightcyan;
+  background-repeat: repeat-y;
+
+  font-weight: normal;
+  align-self: center;
+  column-width: 33%;
+
+}
+.table{
+  width: 90%;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+
+  position: absolute; 
+  height: 300px; 
+  overflow: auto;
+}
+
+.filter-field{
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
